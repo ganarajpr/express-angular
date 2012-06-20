@@ -1,0 +1,11 @@
+{
+    "name": "node-angular"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "2.5.10"
+    , "ejs": ">= 0.0.1",
+    "nconf": ">= 0.5.1",
+    "everyauth": ">= 0.2.29"
+  }
+}
