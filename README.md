@@ -24,7 +24,7 @@ Unlike _Angular Express Seed_ this project uses html itself as the templating en
 
 ## How to use
 
-Clone the angular-express-seed repository and start hacking!
+Clone the express-angular repository and start hacking!
 
 ### Running the app
 
