@@ -85,13 +85,13 @@ function addUser (source, sourceUser) {
     return user;
 }
 
-var app = module.exports = express.createServer();
+var app = module.exports = express();
 
 // Configuration
 
 app.configure(function(){
   app.set('views', __dirname + '/views');
-    app.register('.html', require('ejs'));
+    app.engine('.html', require('ejs').renderFile);
     app.set('view engine', 'html');
     app.set('view options', {
         layout: false
@@ -116,7 +116,6 @@ app.configure('production', function(){
 // Routes
 
 // Routes
-everyauth.helpExpress(app);
 app.get('/', routes.index);
 app.get('/login', routes.login);
 app.get('/partials/:name', routes.partials);
@@ -130,6 +129,6 @@ app.post('/api/addPost', api.addPost);
 app.post('/api/editPost', api.editPost);
 app.post('/api/deletePost', api.deletePost);
 
-app.listen(3000, function(){
-  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+appServer = app.listen(3000, function(){
+  console.log("Express server listening on port %d in %s mode", appServer.address().port, app.settings.env);
 });

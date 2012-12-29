@@ -1,4 +1,4 @@
-# Angular Node Seed with EveryAuth and Bootstrap
+# Express Angular Seed with EveryAuth and Bootstrap
 
 
 _This repo is inspired by [Angular Express Seed] (https://github.com/btford/angular-express-seed)._
@@ -12,11 +12,8 @@ Start an awesome app with AngularJS on the front, Express + Node on the back. Th
 application skeleton for a typical [AngularJS](http://angularjs.org/) web app for those who want
 to use Node to serve their app.
 
-The seed contains angular libraries, test libraries and a bunch of scripts all preconfigured for
-instant web development gratification. Just clone the repo (or download the zip/tarball) and
-you're ready to develop your application.
-
-The seed app shows how to wire together Angular client-side components with Express on the server.
+The seed app shows how to wire together Angular client-side components with Express on the server and have OAuth setup, so that you dont have to worry about
+authentication of your user.
 
 ##Note :
 
