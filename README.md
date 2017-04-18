@@ -15,7 +15,7 @@ to use Node to serve their app.
 The seed app shows how to wire together Angular client-side components with Express on the server and have OAuth setup, so that you dont have to worry about
 authentication of your user.
 
-##Note :
+## Note :
 
 Unlike _Angular Express Seed_ this project uses html itself as the templating engine which I personally find more comfortable.
 
